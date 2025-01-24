@@ -1,0 +1,38 @@
+@media screen and (max-width: 479px) {
+  .slider {
+    height: 500px;
+  }
+  .slider img {
+    opacity: 0.9;
+  }
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+  .donate {
+    display: none;
+  }
+  .intro-box {
+    justify-content: center;
+    top: 140px;
+    font-size: 20px;
+  }
+  .intro-social img {
+    width: 25px;
+    height: 25px;
+  }
+  .hidden-donate {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    text-decoration: none;
+    font-family: "glt-normal", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5%;
+    padding: 15px 30px 15px 30px;
+  }
+}
