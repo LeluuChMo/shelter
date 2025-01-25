@@ -139,3 +139,102 @@ p {
   font-family: "glt-normal", sans-serif;
 }
 /* #2c793e */
+
+/* Pets */
+.pet-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+  font-family: "glt-normal", sans-serif;
+  font-size: 70px;
+}
+
+.pet-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  font-family: "glt-normal", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+.card-content h4 {
+  margin: 0 0 10px;
+  font-size: 2.5em;
+  color: #333;
+}
+.card-content p {
+  margin: 0 0 15px;
+  font-size: 1.5em;
+  color: #666;
+}
+.tags {
+  margin-bottom: 15px;
+}
+.tags span {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: rgb(70, 105, 70);
+  border-radius: 20px;
+}
+.card-content button {
+  font-family: "glt-normal", sans-serif;
+  background-color: rgb(70, 105, 70);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.more-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.more-btn button {
+  font-family: "glt-normal", sans-serif;
+  background-color: rgb(70, 105, 70);
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.card-content button:hover,
+.more-btn button:hover {
+  background-color: rgb(102, 132, 90);
+}
+.pet-box {
+  padding: 50px 60px 50px;
+}
