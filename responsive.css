@@ -1,7 +1,4 @@
 @media screen and (max-width: 479px) {
-  .slider {
-    height: 500px;
-  }
   .slider img {
     opacity: 0.9;
   }
