@@ -15,7 +15,7 @@ main {
   padding: 0;
   overflow-x: hidden;
   width: 100% !important;
-  background-color: rgb(206, 255, 186);
+  background-color: #f0ebdd;
 }
 
 .container {
@@ -27,10 +27,6 @@ section {
   height: 100%;
   display: inline-block;
 }
-/* h2 {
-  font-family: "glt-normal", sans-serif;
-  font-size: 80px;
-} */
 
 /* Slider */
 
@@ -41,8 +37,9 @@ section {
 }
 .slider img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
+  border-radius: 5%;
 }
 .main-image {
   display: none;
@@ -112,3 +109,33 @@ section {
   width: 35px;
   height: 35px;
 }
+
+/* Numbers */
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 50px 60px 50px;
+}
+.number-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  font-family: "glt-normal", sans-serif;
+  font-size: 40px;
+  grid-row-gap: 16px;
+  background-color: #fff;
+  border-radius: 5%;
+  padding: 40px 48px;
+}
+
+h2 {
+  font-size: 50px;
+}
+.number-box h2,
+p {
+  font-family: "glt-normal", sans-serif;
+}
+/* #2c793e */
