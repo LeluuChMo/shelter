@@ -41,6 +41,15 @@ header {
   position: fixed;
   z-index: 1;
 }
+#header {
+  transition: opacity 0.5s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.scrolled {
+  opacity: 0.9;
+}
 .header-right {
   display: flex;
   align-items: center;
@@ -69,7 +78,10 @@ header {
   font-family: "glt-normal", sans-serif;
   font-size: 25px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #d3d3d3;
 }
 .donate-box {
   display: flex;
@@ -87,8 +99,6 @@ header {
   padding: 10px;
 }
 .donate-box:hover {
-  opacity: 1;
-  color: #fff;
   scale: 1.1;
 }
 .hidden-donate {
@@ -173,17 +183,21 @@ h2 {
 p {
   font-family: "glt-normal", sans-serif;
 }
-/* #2c793e */
 
 /* Pets */
 h3 {
   display: flex;
   justify-content: center;
-  padding-bottom: 60px;
   font-family: "glt-normal", sans-serif;
   font-size: 70px;
 }
-
+.pet-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 50px 60px 50px;
+}
 .pet-card {
   display: flex;
   justify-content: center;
@@ -192,7 +206,7 @@ h3 {
 }
 
 .card {
-  width: 350px;
+  width: 360px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -251,7 +265,6 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 .more-btn button {
   font-family: "glt-normal", sans-serif;
@@ -266,19 +279,41 @@ h3 {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-/* .card-content button:hover,
-.more-btn button:hover {
-  
-} */
-.pet-box {
-  padding: 50px 60px 50px;
-}
 
+/* Sponsors */
+
+.sponsors-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 50px 60px 50px;
+}
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  grid-row-gap: 16px;
+  background-color: #fff;
+  border-radius: 5%;
+  padding: 40px 48px;
+  height: 200px;
+  overflow-x: hidden;
+}
+.sponsor img {
+  width: 150px;
+}
 /* Footer */
 
 footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #b0c4de;
-  padding-left: 100px;
-  padding-right: 100px;
-  height: 300px;
+  padding: 60px 50px 60px 50px;
+}
+.copyright {
+  font-family: "glt-normal", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
